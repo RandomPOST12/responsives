@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    margin:0;
+    padding:0;
+  }
+
+li{
+    list-style-type: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+i{
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+    color: #ececec;
+}
+
+body{
+
+    background-color: #0e1525;
+    color: #ececec;
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow: hidden;
+    
+}
+.navigation{
+    width: 100vw;
+    background-color: #1c2333;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    border-bottom: .1px solid #ececec97;
+
+}
+
+.btn {
+    padding: .8rem .6rem;
+    border-radius: 7px;
+    font-weight: 500;
+    
+}
+.btn-sm {
+    padding: .3rem .6rem;
+    background-color: #0053a6;
+    margin-right: 20px;
+    border-radius: 7px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: #272c37;
+}
+
+
+.btn-mid {
+    padding: .3rem .6rem;
+    background-color: #0053a6;
+    border-radius: 7px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem; 
+  
+}
+
+.container{
+    width:100%;
+    display: grid;
+    grid-template-columns: 15rem 100%;
+}
+
+.sidebar{
+    background-color: #1c2333;
+    padding: 1rem .3rem;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.main {
+    padding:1rem ;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    
+}
+
+.main .card{
+    min-width: 25rem;
+    max-height: 12rem;
+    background-color: #1e293b;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: 1px solid rgba(128, 128, 128, 0.501);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.card .profile{
+   display: flex;
+
+}
+
+.profile .tag{
+    font-size: .6rem;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,83,166,1) 100%);
+    width: fit-content;
+    padding:.1rem .5rem;
+    border-radius: 5px;
+}
+
+.card .des{
+    font-size: 1em;
+    margin-top:1rem ;
+}
